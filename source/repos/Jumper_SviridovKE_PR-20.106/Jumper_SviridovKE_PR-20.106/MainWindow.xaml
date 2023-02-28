@@ -1,0 +1,36 @@
+﻿<Window x:Class="Jumper_SviridovKE_PR_20._106.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Jumper_SviridovKE_PR_20._106"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="2*" />
+            <RowDefinition Height="10*" />
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="10*" />
+        </Grid.ColumnDefinitions>
+        <Canvas Grid.ColumnSpan="2" Background="#F9969E" />
+        <Image Source="/Images/Logos/Попрыженок.png" />
+        <TextBlock
+            Grid.Column="0"
+            Grid.ColumnSpan="2"
+            FontSize="26"
+            Style="{DynamicResource Header}"
+            Text="Попрыжонок" />
+        
+        <Frame
+            x:Name="mainFrame"
+            Grid.Row="1"
+            Grid.ColumnSpan="2"
+            NavigationUIVisibility="Hidden"
+            Source="../Pages/MainPage.xaml" />
+    </Grid>
+    </Grid>
+</Window>
